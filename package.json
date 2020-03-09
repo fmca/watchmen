@@ -20,7 +20,7 @@
     "url": "git://github.com/iloire/watchmen.git"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": "11.15.0"
   },
   "keywords": [
     "monitor",
