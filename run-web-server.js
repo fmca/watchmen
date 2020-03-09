@@ -10,7 +10,7 @@ var RETURN_CODES = {
 };
 
 program
-    .option('-p, --port [port]', 'Port to bind web process to', config.port || 3000)
+    .option('-p, --port [port]', 'Port to bind web process to', config.port || process.env.PORT  || 3000)
     .option('-e, --env [env]', 'Storage environment key', process.env.NODE_ENV || 'development')
     .parse(process.argv);
 
