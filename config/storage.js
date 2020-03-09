@@ -4,6 +4,7 @@ module.exports = {
     provider : 'redis',
     options : {
       'redis' : {
+        url: process.env.REDIS_URL,
         port: process.env.WATCHMEN_REDIS_PORT_PRODUCTION || 1216,
         host: process.env.WATCHMEN_REDIS_ADDR_PRODUCTION || '127.0.0.1',
         db: process.env.WATCHMEN_REDIS_DB_PRODUCTION || 1
